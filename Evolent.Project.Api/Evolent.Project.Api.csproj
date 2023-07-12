@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Evolent.Project.DataAccess\Evolent.Project.DataAccess.csproj" />
+    <ProjectReference Include="..\Evolent.Project.Managers\Evolent.Project.Managers.csproj" />
+  </ItemGroup>
+
+
+</Project>
