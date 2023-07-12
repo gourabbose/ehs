@@ -1,17 +1,15 @@
 ﻿using Evolent.Project.Managers.Interfaces;
 using Evolent.Project.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace Evolent.Project.Api
+namespace Evolent.Project.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeesController : ControllerBase
+    public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeManager employeeManager;
-        public EmployeesController(IEmployeeManager employeeManager)
+        public EmployeeController(IEmployeeManager employeeManager)
         {
             this.employeeManager = employeeManager;
         }
@@ -50,6 +48,13 @@ namespace Evolent.Project.Api
         public async Task Delete(int id)
         {
             await this.employeeManager.DeleteEmployee(id);
+        }
+
+        [HttpGet]
+        [Route("search")]
+        public async Task<IEnumerable<Employee>> Search(string? firstName, string? lastName)
+        {
+            return await this.employeeManager.SearchEmployee(firstName, lastName);
         }
     }
 }

@@ -50,7 +50,7 @@ namespace Evolent.Project.DataAccess
 
         public virtual IQueryable<T> Get()
         {
-            return this.dbSet.AsQueryable();
+            return this.dbSet.AsNoTracking().AsQueryable();
         }
     }
 }

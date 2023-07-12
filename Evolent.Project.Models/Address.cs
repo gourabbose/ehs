@@ -1,4 +1,6 @@
 ﻿
+using System.Text.Json.Serialization;
+
 namespace Evolent.Project.Models
 {
     public class Address : ModelBase
@@ -9,6 +11,7 @@ namespace Evolent.Project.Models
         public string State { get; set; } = default!;
         public string PostalCode { get; set; } = default!;
 
+        [JsonIgnore]
         public Employee Employee { get; set; } = default!;
     }
 }

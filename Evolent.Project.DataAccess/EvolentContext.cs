@@ -5,9 +5,14 @@ namespace Evolent.Project.DataAccess
 {
     public class EvolentContext : DbContext
     {
-        public EvolentContext()
+        //public EvolentContext()
+        //{
+
+        //}
+
+        public EvolentContext(DbContextOptions<EvolentContext> options) : base(options)
         {
-               
+            Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -20,8 +25,9 @@ namespace Evolent.Project.DataAccess
                 .IsUnique();
 
             modelBuilder.Entity<Employee>()
-                .HasOne(t=>t.Address)
-                .WithOne(s=>s.Employee)
+                .HasOne(t => t.Address)
+                .WithOne(s => s.Employee)
+                .HasForeignKey<Address>(t => t.Id)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Set ref for Address on the composite key of Employee

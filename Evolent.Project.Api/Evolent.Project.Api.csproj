@@ -2,16 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Evolent.Project.DataAccess\Evolent.Project.DataAccess.csproj" />
     <ProjectReference Include="..\Evolent.Project.Managers\Evolent.Project.Managers.csproj" />
+    <ProjectReference Include="..\Evolent.Project.Models\Evolent.Project.Models.csproj" />
   </ItemGroup>
-
 
 </Project>

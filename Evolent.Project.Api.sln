@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.Api", "Evolent.Project.Api\Evolent.Project.Api.csproj", "{BE0AD1FF-9C2A-4537-9B75-5CF5FEF84A1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.Models", "Evolent.Project.Models\Evolent.Project.Models.csproj", "{5A894492-65E2-46B0-838C-AFBD7D5857AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolent.Project.Models", "Evolent.Project.Models\Evolent.Project.Models.csproj", "{5A894492-65E2-46B0-838C-AFBD7D5857AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.DataAccess", "Evolent.Project.DataAccess\Evolent.Project.DataAccess.csproj", "{78C688D5-27B0-4BC5-8746-C429E8F82F7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolent.Project.DataAccess", "Evolent.Project.DataAccess\Evolent.Project.DataAccess.csproj", "{78C688D5-27B0-4BC5-8746-C429E8F82F7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.Tests", "Evolent.Project.Tests\Evolent.Project.Tests.csproj", "{BF1AF495-92C0-44A8-8C89-9FACB8B4CD3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolent.Project.Tests", "Evolent.Project.Tests\Evolent.Project.Tests.csproj", "{BF1AF495-92C0-44A8-8C89-9FACB8B4CD3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.Managers", "Evolent.Project.Managers\Evolent.Project.Managers.csproj", "{278F02F4-4992-4D9A-A0FD-0BB1CA4D0765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolent.Project.Managers", "Evolent.Project.Managers\Evolent.Project.Managers.csproj", "{278F02F4-4992-4D9A-A0FD-0BB1CA4D0765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evolent.Project.Api", "Evolent.Project.Api\Evolent.Project.Api.csproj", "{8A39696D-6CC8-4209-97CD-0E533F2C4CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolent.Project.WebApi", "Evolent.Project.WebApi\Evolent.Project.WebApi.csproj", "{0C8E20E3-EDDC-4836-9488-53B04E8B4E7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BE0AD1FF-9C2A-4537-9B75-5CF5FEF84A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE0AD1FF-9C2A-4537-9B75-5CF5FEF84A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE0AD1FF-9C2A-4537-9B75-5CF5FEF84A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE0AD1FF-9C2A-4537-9B75-5CF5FEF84A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A894492-65E2-46B0-838C-AFBD7D5857AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A894492-65E2-46B0-838C-AFBD7D5857AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A894492-65E2-46B0-838C-AFBD7D5857AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,14 @@ Global
 		{278F02F4-4992-4D9A-A0FD-0BB1CA4D0765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{278F02F4-4992-4D9A-A0FD-0BB1CA4D0765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{278F02F4-4992-4D9A-A0FD-0BB1CA4D0765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A39696D-6CC8-4209-97CD-0E533F2C4CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A39696D-6CC8-4209-97CD-0E533F2C4CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A39696D-6CC8-4209-97CD-0E533F2C4CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A39696D-6CC8-4209-97CD-0E533F2C4CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8E20E3-EDDC-4836-9488-53B04E8B4E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8E20E3-EDDC-4836-9488-53B04E8B4E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8E20E3-EDDC-4836-9488-53B04E8B4E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8E20E3-EDDC-4836-9488-53B04E8B4E7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
