@@ -48,6 +48,7 @@ namespace Evolent.Project.Managers
             }
 
             employee.Address.Id = existing.Address.Id;
+            employee.AddressId = existing.Address.Id;
             await this.addressRepository.UpdateAsync(employee.Address);
             await this.employeeRepository.UpdateAsync(employee);
         }
