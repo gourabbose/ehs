@@ -5,6 +5,10 @@ namespace Evolent.Project.DataAccess
 {
     public class EvolentContext : DbContext
     {
+        public EvolentContext()
+        {
+                
+        }
         public EvolentContext(DbContextOptions<EvolentContext> options) : base(options)
         {
             Database.EnsureCreated();
